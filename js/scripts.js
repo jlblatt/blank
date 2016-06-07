@@ -30,7 +30,7 @@ function bindWindowSizeEvent(func)
   func();
 }
 
-function bindIntereactionEvent(func)
+function bindInteractionEvent(func)
 {
   $(window).on("debouncedresize scroll touchstart touchmove touchend", func);
   $(window).on("orientationchange", function(){ setTimeout(func, 150);});
